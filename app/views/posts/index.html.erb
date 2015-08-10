@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+
+    <div>
+    	<br>
+        <h2> Name of Whiskey: <%= post.title %> </h2> <br>
+        <p> Review: <%=  post.content %> </p>
+        <%= button_to "Delete", post, method: :delete %>
+    </div>
+
+<% end %>

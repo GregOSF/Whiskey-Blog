@@ -1,0 +1,9 @@
+<h1>Post a Whiskey Review</h1>
+
+<%= form_for :post,  url: {action: "create"} do |f| %>
+
+    <%= f.text_field :title %>
+    <%= f.text_area :content %>
+    <%= f.submit "Save Review" %>
+
+<% end %>
